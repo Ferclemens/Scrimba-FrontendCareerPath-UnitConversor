@@ -15,6 +15,7 @@ body {
     background-color: var(--bodyBack);
 }
 .app-container {
+    position: relative;
     width: 550px;
     height: auto;
     margin: 50px auto;
@@ -42,6 +43,13 @@ body {
     text-align: center;
     font-weight: bold;
 }
+.input-units::-webkit-inner-spin-button,
+.input-units::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+.input-units { 
+    -moz-appearance:textfield; 
+}
 .btn-convert {
     border-radius: 5px;
     border: none;
@@ -56,6 +64,17 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    transition: 0.1s;
+}
+.dark {
+    background-color: var(--darkBack);
+    color: var(--textlight);
+}
+.dark div {
+    background-color: var(--dark)
+} 
+.dark p {
+    color: var(--light);
 }
 .conversion-description {
     background-color: var(--light);
@@ -63,3 +82,24 @@ body {
     box-shadow: 0 0 1px var(--bodyBack);
     border-radius: 5px;
 }
+.button-theme {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    background-color: var(--textlight);
+    border: 1px solid var(--dark);
+    box-shadow: 2px 2px 0 var(--textDark);
+    cursor: pointer;
+    transition: 0.1s;
+    padding: 0;
+}
+.button-theme:active {
+    position: absolute;
+    box-shadow: 0px 0px 0 var(--textlight);
+    top: 11px;
+    right: 18px;
+}
+

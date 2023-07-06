@@ -3,23 +3,44 @@
 const inputEl = document.getElementById('input-el')
 const btnEl = document.getElementById('btn-el')
 const conversionEl = document.getElementById('conversion-box')
+const themeBtnEl = document.getElementById('btn-theme')
 
 //listeners
 btnEl.addEventListener('click',function() {
     const units = inputEl.value
     render(units)
+    inputEl.textContent = ''
 })
 
 //functions
-/* 1 meter = 3.281 feet | 1 liter = 0.264 gallon | 1 kilogram = 2.204 pound */
+/*  
+    1 meter = 3.281 feet  
+    1 liter = 0.264 gallon 
+    1 kilogram = 2.204 pound 
+*/
 
 const unit = [3.281, 0.264, 2.204]
 
+// render conversion results in html.
 function render(number) {
     const results = unitsConversion(number)
     conversionEl.innerHTML = results
+    
 }
 
+// change theme between dark and light.
+function changeTheme() {
+    if(themeBtnEl.textContent === '🌜') {
+        themeBtnEl.textContent = '🌞'
+        conversionEl.classList.add('dark')
+    } else {
+        themeBtnEl.textContent = '🌜'
+        conversionEl.classList.remove('dark')
+    }
+}
+//remove the increment and decrement buttons from the input type number
+
+//conversion of units.
 function unitsConversion(units) {
     let results = [] 
     let divisionResult = null
@@ -56,7 +77,7 @@ function unitsConversion(units) {
         }
 
     }  
-    console.log(results);
+    //console.log(results);
     return results
     
 }
