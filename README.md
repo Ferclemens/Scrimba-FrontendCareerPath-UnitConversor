@@ -8,5 +8,5 @@ A conversor tool for units of length (meters - feet), volume (gallons - liters) 
 Deploy:
     - 
 
-!['./img/darkTheme.png'](./img/PasswordGenerator-darkTheme.png)
-!['./img/lightTheme.png'](./img/PasswordGenerator-lightTheme.png)
+!['./img/darkTheme.png'](./img/darkTheme.png)
+!['./img/lightTheme.png'](./img/lightTheme.png)
