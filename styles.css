@@ -43,6 +43,8 @@ body {
     text-align: center;
     font-weight: bold;
 }
+/*  remove the increment and decrement buttons from the input type number - compatible with Chrome and Mozilla.*/
+
 .input-units::-webkit-inner-spin-button,
 .input-units::-webkit-outer-spin-button {
     -webkit-appearance: none;
@@ -50,12 +52,20 @@ body {
 .input-units { 
     -moz-appearance:textfield; 
 }
+
+/*https://es.stackoverflow.com/questions/20484/c%C3%B3mo-eliminar-los-botones-de-un-input-number*/
+
 .btn-convert {
     border-radius: 5px;
     border: none;
     padding: 8px 25px;
     margin-top: 20px;
     cursor: pointer;
+    background-color: var(--light);
+    transition: 0.2s;
+}
+.btn-convert:active {
+    background-color: var(--textlight);
 }
 .conversions-container {
     background-color: var(--lightBack);

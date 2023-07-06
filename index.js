@@ -38,7 +38,6 @@ function changeTheme() {
         conversionEl.classList.remove('dark')
     }
 }
-//remove the increment and decrement buttons from the input type number
 
 //conversion of units.
 function unitsConversion(units) {
