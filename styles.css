@@ -1,0 +1,65 @@
+:root {
+    --bodyBack: #1C1C1C;
+    --contrast: #6943FF;
+    --light: #FFFFFF;
+    --lightBack: #F4F4F4;
+    --dark: #273549;
+    --darkBack: #1F2937;
+    --textDark: #353535;
+    --textlight: #CCC1FF;  
+}
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bodyBack);
+}
+.app-container {
+    width: 550px;
+    height: auto;
+    margin: 50px auto;
+}
+.input-container {
+    background-color: var(--contrast);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    color: var(--light);
+    overflow: hidden;
+}
+.input-units {
+    height: 75px;
+    width: 120px;
+    border: 1px solid var(--light);
+    border-radius: 5px;
+    background-color: transparent;
+    text-decoration: none;
+    color: var(--light);
+    padding: 5px;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+}
+.btn-convert {
+    border-radius: 5px;
+    border: none;
+    padding: 8px 25px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.conversions-container {
+    background-color: var(--lightBack);
+    padding: 30px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.conversion-description {
+    background-color: var(--light);
+    padding: 10px 0;
+    box-shadow: 0 0 1px var(--bodyBack);
+    border-radius: 5px;
+}

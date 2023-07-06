@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Unit Conversor</title>
+</head>
+<body>
+    <section class="app-container">
+        <div class="input-container">
+            <h1>Metric/Imperial Unit Conversion</h1>
+            <input type="number" class="input-units" id="input-el" value="20">
+            <button id="btn-el" class="btn-convert">Convert</button>
+        </div>
+        <div class="conversions-container" id="conversion-box">
+            <div class="conversion-description">
+                <h2>Length (Meter/Feet)</h2>
+                <p id="length">20 meters = 65.616 feet | 20 feet = 6.096 meters</p>
+            </div>
+            <div class="conversion-description">
+                <h2>Volume (Liters/Gallons)</h2>
+                <p id="volume">20 meters = 65.616 feet | 20 feet = 6.096 meters</p>
+            </div>
+            <div class="conversion-description">
+                <h2>Mass (Kilograms/Pounds)</h2>
+                <p id="mass">20 meters = 65.616 feet | 20 feet = 6.096 meters</p>
+            </div>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
